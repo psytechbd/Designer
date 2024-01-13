@@ -13,10 +13,12 @@
 
 .carousel-item {
     /* background: #E3EBED; */
-    background: #def5fa;
+    background: #e0e0e0;
     align-items: center !important;
 }
-
+.bg-none{
+    background: none !important;
+}
 .carousel-inner img {
     height: 400px;
     width: auto;
@@ -52,6 +54,7 @@
     font-size: 36px;
     font-weight: bold;
     color: #19305C;
+    text-align: right;
     /* text-shadow: 2px 2px rgb(120, 120, 120); */
 }
 
@@ -203,6 +206,15 @@ hr {
     color: white
 }
 
+.testimonial-user{
+    width: 60px !important;
+    height: 60px !important;
+    margin-bottom: 15px;
+}
+.quote{
+    max-width: 500px;
+    margin: auto;
+}
 
 .copyright {
     padding: 10px 0;
