@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>NolimitsNYC</title>
+    <title>Designer Press</title>
 </head>
 
 <body>
@@ -189,14 +189,14 @@
     <!-- Blue Bar -->
     <div class="container-fluid blue mt-5 mb-5">
         <div class="container pt-5 pb-5">
-           <div class="row align-items-center">
-            <div class="col-md-8 ">
-                <h3>See what else we can Produce for you...</h3>
+            <div class="row align-items-center">
+                <div class="col-md-8 ">
+                    <h3>See what else we can Produce for you...</h3>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-secondary">All Products</button>
+                </div>
             </div>
-            <div class="col-md-4">
-                <button class="btn btn-secondary">All Products</button>
-            </div>
-           </div>
         </div>
     </div>
     <!-- Blue Bar -->
@@ -211,34 +211,54 @@
                 <div class="card" style="width: 100%;">
                     <img src="images/image 1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Design</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Design</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="card" style="width: 100%;">
                     <img src="images/image 2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Print</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Print</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="card" style="width: 100%;">
                     <img src="images/image 3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Remote</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Remote</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
-
     <!-- Base services -->
-
+    <!-- Client slider -->
+    <div class="container gap">
+        <div class="title">
+            <h2>Our awesome clients</h2>
+            <hr>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-8 m-auto">
+                <section class="customer-logos slider justify-item-center">
+                    <div class="slide"><img src="images/client-logo-1.avif"></div>
+                    <div class="slide"><img src="images/client-logo-2.avif"></div>
+                    <div class="slide"><img src="images/client-logo-2.avif"></div>
+                    <div class="slide"><img src="images/client-logo-1.avif"></div>
+                    <div class="slide"><img src="images/client-logo-2.avif"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Client slider -->
 
 
 
@@ -301,6 +321,31 @@
     <!-- Footer section -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
 </body>
 
 </html>

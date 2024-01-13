@@ -2,13 +2,16 @@
     font-family: kite;
     src: url(../assets/KiteOne-Regular.ttf);
 }
-*{
+
+* {
     font-family: kite;
 }
-.carousel{
+
+.carousel {
     margin-bottom: 50px !important;
 }
-.carousel-item{
+
+.carousel-item {
     /* background: #E3EBED; */
     background: #def5fa;
     align-items: center !important;
@@ -16,8 +19,8 @@
 
 .carousel-inner img {
     height: 400px;
-    width:auto;
-  }
+    width: auto;
+}
 
 .gap {
     padding: 100px 0;
@@ -35,7 +38,7 @@
     border: none;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #0b162a;
 }
 
@@ -52,8 +55,8 @@
     /* text-shadow: 2px 2px rgb(120, 120, 120); */
 }
 
-.nav-item > .active {
-    background:  #19305C;
+.nav-item>.active {
+    background: #19305C;
     color: white !important;
     height: 80px;
     width: 80px;
@@ -64,7 +67,7 @@
     mix-blend-mode: multiply;
 }
 
-hr{
+hr {
     width: 50px;
     border: 2px solid #19305C;
     margin: 20px auto;
@@ -94,13 +97,13 @@ hr{
 
 }
 
-.navbar{
-    padding:0;
+.navbar {
+    padding: 0;
 }
 
 
 .content {
-    
+
     position: relative;
     width: 100%;
     /* max-width: 400px; */
@@ -108,13 +111,13 @@ hr{
     overflow: hidden;
 }
 
-.content-image{
-height: 700px;
-object-fit: cover;
+.content-image {
+    height: 700px;
+    object-fit: cover;
 }
 
 .content .content-overlay {
-    
+
     /* border-radius: 15px; */
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -133,6 +136,7 @@ object-fit: cover;
 .content:hover .content-overlay {
     opacity: 1;
 }
+
 .content-details {
     position: absolute;
     text-align: center;
@@ -169,11 +173,11 @@ object-fit: cover;
     font-size: 0.8em;
 }
 
-.card{
-    border:none;
+.card {
+    border: none;
 }
 
-.card-body{
+.card-body {
     padding: 15px 0;
 }
 
@@ -204,6 +208,121 @@ object-fit: cover;
     padding: 10px 0;
 }
 
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* slider */
+
 @media (Max-width: 576px) {
     .btn {
         margin-bottom: 20px;
@@ -229,6 +348,3 @@ input[type=text] {
     padding-left: 5px;
     margin-bottom: 5px;
 }
-
-
-
