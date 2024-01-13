@@ -339,7 +339,9 @@ hr {
     .btn {
         margin-bottom: 20px;
     }
-
+    .quote{
+        max-width: 250px;
+    }
     .footer {
         padding: 20px
     }
